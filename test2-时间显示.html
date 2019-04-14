@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<p id="clock"></p>
+<script language=javascript>
+var int=self.setInterval("clock()",50)
+function clock()
+  {
+  var t=new Date()
+  document.getElementById("clock").innerHTML=t
+  }
+</script>
+</form>
+<button onclick="int=window.clearInterval(int)">
+Stop interval</button>
+
+</body>
+</html>
