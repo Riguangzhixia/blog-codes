@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>组件定义等乱七八糟的回顾</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app" style="margin:10% auto;">
+        <div>
+            <p class="input-group-addon">{{fromson}}</p>
+        </div>
+        <mycom1></mycom1>
+        <mycom2></mycom2>
+        <mycom3></mycom3>
+        <mycom4 @show="show"></mycom4>
+        <login></login>
+        <register v-bind:parentmsg="msg"></register>
+    </div>
+
+    <template id="temp4">
+        <div @click="changename" class="input-group-addon">
+            <h4 @click="transmsg">方法四：template标签定义组件---{{name}}</h4>
+        </div>
+    </template>
+    <script>
+    /*
+    组件创建方式
+    组件内部必须只有一个根节点
+    全局/私有
+    */
+    
+    // 1.1： 全局的组件模板对象vue.extend
+    let com1 = Vue.extend({
+        template:"<h4 class='input-group-addon'>方法一：用extend和全局定义创建的组件</h4>"
+    })
+    Vue.component("mycom1",com1)
+
+    // 1.2 合并定义全局组件
+    Vue.component("mycom2",Vue.extend({
+        template:"<h4 class='input-group-addon'>方法二：用extend和component合并定义组件</h4>"
+    }))
+
+    // 1.3 对象定义组件
+    Vue.component("mycom3",{
+        template :"<h4 class='input-group-addon'>方法三：用Vue.component一步创建的组件</h4>"
+    })
+
+    // 1.4 template标签定义组件
+    Vue.component("mycom4",{
+        template:"#temp4",
+        data() {
+            return {
+                name:"一个人",
+                sonmsg:"子组件数据"
+            }
+        },
+        methods: {
+            changename(){
+                this.name = this.name + "¿"
+            },
+            transmsg(){
+                this.$emit("show",this.sonmsg)
+            }
+        },
+    })
+    
+    let vm = new Vue({
+        //vm中的对象
+        el:"#app",
+        data:{
+            msg:"父组件中的数据",
+            fromson:""
+            //绑定的数据
+        },
+        methods: {
+            show(data){
+                console.log("父子组件传值以及方法调用-$emit子组件调用父组件方法 ")
+                this.fromson = data;
+            }
+            //函数定义
+        },
+        
+        components:{
+            //定义实例内部私有组件
+            login:{
+                template:"<div><h1 class='input-group-addon' @click='change'>私有登陆组件{{name}}</h1></div>",
+                data() {
+                    return {
+                        name:"Pf"
+                    }
+                },
+                methods: {
+                    change:function(){
+                        this.name += "««"
+                    }
+                },
+            },
+            register:{
+                template:"<p class='input-group-addon' @click = 'change'>私有注册组件---{{nickname}}-{{oldname}}-{{parentmsg}}</p>",
+                data() {
+                    return {
+                        nickname:"一个人",
+                        oldname:"pf"
+                    }
+                },
+                props:['parentmsg'],
+                methods: {
+                    change(){
+                        this.nickname=this.oldname
+                        this.parentmsg="props数据的改变"
+                    }
+                },
+            // 在 computed 中可以定义计算属性
+            // 计算属性的本质。就是 一个封装成属性的方法，吧。（个人理解
+            // 在引用的时候不要加（）去调用
+            // 只要计算属性内部 所用到的 data 发生变化，就会立即从新计算这个属性的值
+            // 跟方法的主要区别：计算属性的求值结果，会被缓存，方便下次直接使用，如果计算属性中方法内部的data数据没有发生变化则不重新计算
+                computed: {
+                    newname:function(msg) {
+                        return 'pf'//额这个算不上计算属性因为没有使用原数据，没啥意义
+                    }
+                },
+            // 使用watch可以监视 data 中指定数据的变化，然后触发这个 watch 中对应的function处理函数
+                watch: {
+                    nickname:function(newname,oldname){
+                        this.oldname = oldname
+                    }
+                },
+            }
+        },
+        filters:{
+            // 私有（局部）过滤器——过滤器有两个条件-【过滤器名称和处理函数】
+            // 过滤器调用的原则为就近原则
+        },
+        watch: {
+            //监听data数据的变化，监听路由地址的变化事件$route.path
+        },
+        created() {
+            //生命周期函数
+        },
+    })
+    </script>
+</body>
+</html>

@@ -18,3 +18,12 @@
 
     4. test4-js数组遍历.html
 ![demo演示](preImg/4.png "图片")
+
+    5. test4-Vue数据绑定实现.html
+![demo演示](preImg/5.png "图片")
+
+    6. test4-脚本互相依赖执行顺序.html
+![demo演示](preImg/6.png "图片")
+
+    7. test4-Vue组件路由回顾.html
+![demo演示](preImg/7.png "图片")
