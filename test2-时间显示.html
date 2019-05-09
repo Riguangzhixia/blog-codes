@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html>
 <body>
 
 <p id="clock"></p>
-<script language=javascript>
+<script language="javascript">
 var int=self.setInterval("clock()",50)
 function clock()
   {
@@ -10,7 +11,7 @@ function clock()
   document.getElementById("clock").innerHTML=t
   }
 </script>
-</form>
+
 <button onclick="int=window.clearInterval(int)">
 Stop interval</button>
 
