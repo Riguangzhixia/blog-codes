@@ -159,6 +159,7 @@
                    if(JSON.stringify(element) == JSON.stringify({id:item.id,name:item.name,ctime:item.ctime,teacher:item.teacher}) ) flag = 0;
                 });*/
             //3.map循环，与forEach相似，不过支持return语句，这是forEach没有的,不过也不能break
+                //遍历数组并返回经过函数处理之后的数组元素map(function(currentValue,index,arr),thisValue)
                 /*if(this.selectedList.length > 0){
                 this.selectedList.map(element => {
                     if(JSON.stringify(element) == JSON.stringify({id:item.id,name:item.name,ctime:item.ctime,teacher:item.teacher}) ) {
@@ -193,10 +194,11 @@
                 }else{
                     console.log("flag=0");
                     alert("已添加");
-                }
-
+                }  
                 // 恢复初始值
             },
+            //6.filter方法，遍历数组并返回其中函数返回值为true的数组元素              
+                //filter(function(currentValue,index,arr), thisValue)
             del(id){
                 console.log("删除方法")
                 // console.log(id)

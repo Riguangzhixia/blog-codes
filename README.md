@@ -2,10 +2,16 @@
 
     之前练习时候的文件，顺便最近学习vue的文件一起上传了，代码内容如文件名
 
+## 说明
+
+    -就当学习中的一些笔记
+    -额，在github上放图片加载好像是个很蠢的行为但是谁让我懒呢。。
+    -前端入门中~学无止境
+
 ## 目录
 
-    0. test0-页面事件例-卸载事件.html  
-![demo演示](https://raw.githubusercontent.com/PENGFEI-CN/learnANDreview/master/preImg/0.png "图片")
+    0. test1-less测试以及不同三角形的绘制.html  
+![demo演示](preImg/0.png "图片")
 
     1. test1-less测试以及不同三角形的绘制.html  
 ![demo演示](preImg/1.png "图片")
@@ -27,3 +33,6 @@
 
     7. test4-Vue组件路由回顾.html
 ![demo演示](preImg/7.png "图片")
+
+    8. test4-Vue组件路由回顾.html
+![demo演示](preImg/8.png "图片")
