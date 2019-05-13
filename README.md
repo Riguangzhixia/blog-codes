@@ -34,5 +34,9 @@
     7. test7-Vue组件路由回顾.html
 ![demo演示](preImg/7.png "图片")
 
-    8. test8-Vue组件路由回顾.html
+    8. test8-筛选过滤数据的实现.html
 ![demo演示](preImg/8.png "图片")
+
+    9. test9-路由等回顾.html
+![demo演示](preImg/9.png "图片")
+
