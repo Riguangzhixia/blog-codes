@@ -1,12 +1,20 @@
 # 练习代码
 
-    之前练习时候的文件，顺便最近学习vue的文件一起上传了，代码内容如文件名
+    -练习时候的文件，顺便最近学习vue和复习js、准备实习面试的代码一起上传了；
+    -代码内容如文件名；
 
 ## 说明
 
     -就当学习中的一些笔记
     -额，在github上放图片加载好像是个很蠢的行为但是谁让我懒呢。。
     -前端入门中~学无止境
+
+## 目标
+
+    -慕课网js深入浅出看完的同时跟随练习
+    -黑马vue教程看完的同时同步练习
+    -面试题目得练习
+    -以上，加油！！！习惯成自然！
 
 ## 目录
 
@@ -37,6 +45,10 @@
     8. test8-筛选过滤数据的实现.html
 ![demo演示](preImg/8.png "图片")
 
-    9. test9-路由等回顾.html
+    9. test9-Vue路由等回顾.html
 ![demo演示](preImg/9.png "图片")
 
+    10. test10-js面试题练习.html
+<div style="display:flex;flex-direction:row;align-item:center;justify-content:center;flex-wrap:wrap;">
+    <img style="width:300px;height:300px;"src="preImg/10.1.png" alt="图片">
+</div>
