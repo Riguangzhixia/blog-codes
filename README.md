@@ -49,6 +49,9 @@
 ![demo演示](preImg/9.png "图片")
 
     10. test10-js面试题练习.html
+    10.1-Promise和async,await语句的联合使用；
+    10.2-柯里化，arguments的使用，实现sum(100,200)(300)();得到600a；
 <div style="display:flex;flex-direction:row;align-item:center;justify-content:center;flex-wrap:wrap;">
     <img style="width:300px;height:300px;"src="preImg/10.1.png" alt="图片">
+    <img style="width:300px;height:300px;"src="preImg/10.2.png" alt="图片">
 </div>
