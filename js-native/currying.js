@@ -50,7 +50,7 @@ function add () {
     return fn;
 }
 // 输出结果，可自由组合的参数
-console.log(add(1)(5));  // 15
+console.log(add(1)(5)(1)+0);  // 6
 
 function sum(){
     var num = arguments[0];
@@ -66,28 +66,24 @@ function sum(){
     return num;
     }
 }
-console.log(sum(3)(2));
+console.log(sum(3)(2)+0);
 
-function plus(num) {
-    var adder = function () {
-        var _args = [];
-        var _adder = function _adder() {
-            [].push.apply(_args, [].slice.call(arguments));
+function plus(){
+    var _args = Array.prototype.slice.call(arguments);
+        var _adder = function adder() { 
+            Array.prototype.push.apply(_args,[].slice.call(arguments));
             return _adder;
         };
 
-        _adder.toString = function () {
+        _adder.valueOf = function () {
             return _args.reduce(function (a, b) {
                 return a + b;
-            });
+            })
         }
-
         return _adder;
-    }
-    return adder()(num);
 }
 
-console.log(plus(5)(2));
+console.log(plus(9)(9)(6)+0);
 
 //面试题：实现sunm(100,200)(300)()得到600a
 var currying = function (fn) {
@@ -96,7 +92,6 @@ var currying = function (fn) {
         if (arguments.length === 0) {
             return fn.apply(this, _args);
         }
-        _args.push
         Array.prototype.push.apply(_args, [].slice.call(arguments));
         return arguments.callee;
     }
