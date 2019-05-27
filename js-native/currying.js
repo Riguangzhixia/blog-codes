@@ -59,11 +59,11 @@ function sum(){
             return num+sec;
         }
     }else{
-        var num = 0;
+        var _num = 0;
         for(var i = 0;i<arguments.length;i++){
-            num = num + arguments[i];
+            _num += arguments[i];
         }
-    return num;
+    return _num;
     }
 }
 console.log(sum(3)(2)+0);
@@ -84,6 +84,7 @@ function plus(){
 }
 
 console.log(plus(9)(9)(6)+0);
+console.log(plus(9)+0);
 
 //面试题：实现sunm(100,200)(300)()得到600a
 var currying = function (fn) {
@@ -95,10 +96,13 @@ var currying = function (fn) {
         Array.prototype.push.apply(_args, [].slice.call(arguments));
         return arguments.callee;
     }
+    
+
 };
 
 var multi=function () {
     var total = 0;
+    //封装好的_args通过apply调用函数作为函数得输入实参数组，通过对这个函数得arguments直接进行运算即可得出运算结果；
     for (var i = 0, c; c = arguments[i++];) {
         total += c;
     }
@@ -106,7 +110,14 @@ var multi=function () {
     return total;
 };
 
-var sum = currying(multi);  
+var sum = currying(multi);
 
-console.log(sum(100,200)(300)());  
+sum(100);
+
+console.log(sum()); 
+sum(200);
+console.log(sum());
+
+
+
 

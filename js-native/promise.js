@@ -61,3 +61,18 @@ function loop(x){
 })
 }
 loop(0);
+
+var fun = function fun(i) {
+	return new Promise(function(resolve,reject){
+    setTimeout(() => {
+        resolve(i)
+    }, i * 1000);}
+)
+  }
+async function loop2(){
+	for(var i = 0;i<5;i++){
+    	var res = await fun(i);
+		console.log(res);
+	}
+}
+loop2();
