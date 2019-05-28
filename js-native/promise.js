@@ -18,20 +18,51 @@ var square = function f1(num){
         }, 1000);
     })
 }
+
+var syncsquare = function(num){
+    setTimeout(() => {
+        console.log (num * num);
+    }, 1000);
+}
+function synctest(){
+    list.forEach(
+        function(x){
+            syncsquare(x);
+        }
+    )
+}
+function fortest(){
+    for (var index = 0; index < list.length; index++) {
+        syncsquare(list[index]);
+        console.log("for");
+    }
+}
+function fortestzone(){
+    for (var i = 0; i < 3; i++) {
+        setTimeout(() => {
+            console.log(i)
+        }, 1000)
+    }
+}
+fortestzone();
+fortest();
+synctest();
+//本应该延时1秒的输出在三个一起执行后一起输出了
+//异步，不会阻塞后面进程的执行
+//settimeout得执行顺序问题，以及函数作用域问题
 /*
-//forEach导致本应该延时1秒的输出在三个一起完成后一起输出了
 function test(){
     list.forEach(
         async function (x){
             var res = await square(x);
-            console.log(res);
+            
         }
     );
 }
 test();
+*/
 
-
-
+/*
 //promise.then测试
 list.forEach(
     function(x){
@@ -50,6 +81,7 @@ async function asynctest(){
 }
 asynctest();*/
 //递归
+/*
 function loop(x){
     var list = [1,2,3];
     square(list[x]).then(()=>{
@@ -75,4 +107,4 @@ async function loop2(){
 		console.log(res);
 	}
 }
-loop2();
+loop2();*/
