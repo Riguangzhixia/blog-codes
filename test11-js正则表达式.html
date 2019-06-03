@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="row">
+      <div class="col-xs-1-12">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">i:大小写不敏感</p>
+            <h3 class="card-title">修饰符:</h3>
+            <p class="card-text">i:大小写不敏感</p>
+            <p class="card-text">g:全局匹配，而不是找到一个就结束</p>
+            <p class="card-text">m:多行匹配</p>
+            <button class="func1">
+                    AABBccsdede 
+                    sdababsdeda
+            </button>   
+            <p class="card-text func1text">盯~~</p>
+            <h3 class="card-title">字符串函数:</h3>
+            <p class="card-text">search()</p>
+            <p class="card-text">replace()</p>
+            <h3 class="card-title">RegExp对象及其函数:</h3>
+            <p class="card-text">test()返回布尔值</p>
+            <p class="card-text">exec()返回匹配到的结果</p>
+            <h3 class="card-title">正则符号及其含义:</h3>
+            <p class="card-text">^匹配行首，$匹配行尾；</p>
+            <p class="card-text">字符x*：重复次数>=0；</p>
+            <p class="card-text">字符x+：重复次数>=1；//都为贪婪算法</p>
+            <p class="card-text">字符x*?：重复次数>=0；</p>
+            <p class="card-text">字符x+?：重复次数>=1；//都为非贪婪算法</p>
+            <p class="card-text">字符x?：重复次数0或者1；</p>
+            <p class="card-text">字符x{n,m}：重复次数n<=x<=m；</p>
+            <button class="func2">AABBCCsdede
+                sdababaabbcc</button>
+            <p class="card-text func2text">盯~~</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script>   
+    /*var x = $(".func1").text();
+    console.log(x);*/
+    $(".func1").click(
+        
+        ()=>{
+            var stringtest = $(".func1").text();
+            console.log(stringtest)
+            var newstring = stringtest.match(/ab/gmi);
+            $(".func1text").text(newstring);
+        }    
+    )
+    
+    $(".func2").click(
+    ()=>{
+        var stringtest = $(".func2").text();
+        console.log(stringtest);
+        var test2 = new RegExp("A+","gmi");
+        var result;
+        var name = "func";
+        while((result = test2.exec(stringtest)) !== null){
+            var newstring  = "found:" + result[0] + "  firstindex：" +  result.index + "  nextindex：" + test2.lastIndex;
+            console.log("found:" + result[0] + "  firstindex：" +  result.index + "  nextindex：" + test2.lastIndex);
+            let num = 0;
+            num += 1;
+            let newname = (name + num);
+            var x = document.createElement("p");
+
+            var t=document.createTextNode(newstring);
+            x.appendChild(t);
+            var container = document.getElementsByClassName("card");
+            container[0].appendChild(x);
+            console.log(container[0]);
+        }   
+    }
+    )
+</script>
+</html>
