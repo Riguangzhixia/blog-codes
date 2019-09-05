@@ -74,10 +74,10 @@ input::-webkit-input-placeholder {
 }
 #暂无数据{
   background-color: rgb(240, 137, 137);
-  min-height: 70;
+  min-height: 70px;
 }
 .classInfo{
-  min-height: 70;
+  min-height: 70px;
   display: flex;
   flex-direction: column;
   text-align:center;
