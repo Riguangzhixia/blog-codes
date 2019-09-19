@@ -51,32 +51,28 @@
         
         ()=>{
             var stringtest = $(".func1").text();
-            console.log(stringtest)
+            console.log(stringtest);
             var newstring = stringtest.match(/ab/gmi);
             $(".func1text").text(newstring);
         }    
-    )
+    );
     
     $(".func2").click(
     ()=>{
         var stringtest = $(".func2").text();
-        console.log(stringtest);
         var test2 = new RegExp("A+","gmi");
         var result;
         var name = "func";
         while((result = test2.exec(stringtest)) !== null){
             var newstring  = "found:" + result[0] + "  firstindex：" +  result.index + "  nextindex：" + test2.lastIndex;
-            console.log("found:" + result[0] + "  firstindex：" +  result.index + "  nextindex：" + test2.lastIndex);
             let num = 0;
             num += 1;
             let newname = (name + num);
             var x = document.createElement("p");
-
             var t=document.createTextNode(newstring);
             x.appendChild(t);
             var container = document.getElementsByClassName("card");
             container[0].appendChild(x);
-            console.log(container[0]);
         }   
     }
     )

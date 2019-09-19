@@ -32,9 +32,9 @@ test(1,2);
 //函数调用apply/call/bind方法
 
 //函数柯里化多重参数传入
-function add () {
-    //将argument转换成数组
-    var args = Array.prototype.slice.call(arguments);
+    function add () {
+        //将argument转换成数组
+        var args = Array.prototype.slice.call(arguments);
     var fn = function () {
         //拼接多次调用的参数为数组
         var arg_fn = Array.prototype.slice.call(arguments);
