@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <title>test</title>
     <style type="text/css">
-        .ss{
-            width:0;
-            height:0;
-            border-width:30px;
-            border-style:solid;
-            margin:40px auto;
-            position:relative;
-            border-color: #00FFFF #00FFFF #00FFFF transparent;
+        .scale-1px{
+            position: relative;
+            margin-bottom: 20px;
+            border:none;
+        }
+        .scale-1px:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid #000;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 200%;
+            height: 200%;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            -webkit-transform-origin: left top;
+            transform-origin: left top;
         }
     </style>
 </head>
 <body>
-    <div class="ss"></div>
+    <div class="scale-1px"></div>
 </body>
 </html>
