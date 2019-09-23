@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style type="text/css">
+        .scale0-1px{
+            margin-top: 200px;
+            position: relative;
+            margin-bottom: 20px;
+            border:none;
+        }
+        .scale0-1px:after{
+            display: block;
+            content: '';
+            border-bottom: 1px solid #000;
+            transform: scaleY(.5);
+        }
+        .scale1-1px{
+            position: relative;
+            margin-bottom: 20px;
+            border:none;
+        }
+        .scale1-1px:after{
+            display: block;
+            content: '';
+            height: 1px;
+            background: linear-gradient(0, #fff, #000);
+        }
+        .scale2-1px{
+            margin: 20px auto;
+            width: 50%;
+            text-indent: 32px;
+            position: relative;
+            border:none;
+            box-shadow: 0 0.5px 0 0 #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="scale0-1px">
+
+    </div>
+    <div class="scale1-1px"></div>
+    <div class="scale2-1px">
+        <span>物理像素和设备像素的区别</span>
+        <p>可以通过transform: scale对伪元素进行缩放，也可以通过linear-gradient对背景进行线性渐变。另外可以通过box-shadow在伪元素进行阴影设置。也可以使用svg，但是要注意将颜色的设置或者将其转换为base64。最后可以根据dpr动态将页面进行缩放。</p>
+    </div>
+</body>
+</html>
