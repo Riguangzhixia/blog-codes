@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1aec599-02c1-4c1b-b5f5-d8e748c0fd22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Kingsoft.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html-test/移动端1px问题.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/css/github.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/img/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/img/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/img/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/js/compile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/js/mvvm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/js/observer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/js/watcher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/mvvm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/readme.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvvm-master/vue-demo/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/readme-notes/面试题目集合.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme-notes/面试题目集合.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-js/Compiler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-js/Dep.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-js/Observer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-js/Vue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-js/Watcher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-js/main.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,7 +20,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="342">
-                <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+                <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -66,8 +42,8 @@
         <entry file="file://$PROJECT_DIR$/readme-notes/面试题目集合.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+              <first_editor relative-caret-position="220">
+                <caret line="70" column="8" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -139,11 +115,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1288" />
+    <option name="y" value="40" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -240,7 +216,7 @@
       <workItem from="1568890499117" duration="227000" />
       <workItem from="1568890830003" duration="3683000" />
       <workItem from="1568942609097" duration="7585000" />
-      <workItem from="1569201740054" duration="10447000" />
+      <workItem from="1569201740054" duration="14350000" />
     </task>
     <task id="LOCAL-00001" summary=" 目录修改">
       <created>1567674386766</created>
@@ -263,17 +239,24 @@
       <option name="project" value="LOCAL" />
       <updated>1568975824056</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="目录更新">
+      <created>1569232535869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569232535869</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35215000" />
+    <option name="totallyTimeSpent" value="39118000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-1288" y="40" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.103212215" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1556791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -285,8 +268,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49921012" weight="0.32963374" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49657714" visible="true" weight="0.33740288" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50342286" side_tool="true" visible="true" weight="0.33740288" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49642575" visible="true" weight="0.35976332" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50357425" side_tool="true" visible="true" weight="0.35976332" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.43939394" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -418,7 +401,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="342">
-            <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -450,8 +433,8 @@
     <entry file="file://$PROJECT_DIR$/readme-notes/面试题目集合.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="61" column="12" lean-forward="true" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+          <first_editor relative-caret-position="220">
+            <caret line="70" column="8" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

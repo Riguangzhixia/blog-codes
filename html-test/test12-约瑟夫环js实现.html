@@ -35,16 +35,12 @@
         const source = Array(...Array(N)).map((_, i) => i + 1);
         console.log(source);
         let index = 0;
-        var result = '出列序号顺序为:';
+        var result = [];
         while (source.length) {
+            result.unshift(source.splice(index, 1));
             index = (index + M - 1) % source.length;
-            console.log(source[index]);
-            result += (source[index] + "  ,");
-            source.splice(index, 1);
-            console.log(source.length)
         }
-        
-        console.log(result)
+        console.log(result);
         return result;
     }
 

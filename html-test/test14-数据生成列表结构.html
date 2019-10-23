@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+    var city = [
+        {	name : "北京",
+            children : [
+                { name : "海淀区",
+                    children : [
+                        { name : "1环",
+                            children : [
+                                { name : "10环"},
+                                { name : "11环"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ];
+    function getChild( parents ){
+        var childUl = "";
+        if( parents){
+            for(var i = 0; i < parents.length; i++ ){
+                childUl += "<li>" + parents[i].name + "</li>";	//同级元素用li标签
+                if(parents[i].children){ //判断是否当前元素是否有子节点
+                    var childNode = getChild( parents[i].children ); //返回子节点
+                    //把子字节点放入父节点文本之后
+                    childUl = childUl.replace( parents[i].name, parents[i].name + childNode );
+                }
+            }
+            childUl =  "<ul>" + childUl + "</ul>"; //兄弟节点放在一起
+            return childUl;
+        }
+    }
+    var html = getChild( city );
+    document.write( html );
+</script>
+</body>
+</html>

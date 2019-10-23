@@ -16,7 +16,6 @@ var spiralOrder = function(matrix) {
                 temp = temp.concat(item.splice(0,1));
              });
              result = result.concat(temp.reverse());
-            
         }else{
             break;
         }

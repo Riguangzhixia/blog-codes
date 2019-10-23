@@ -14,5 +14,5 @@ function transform(str){
         }
     }
 }
-transform('1111111111')
-console.log(result)
+transform('1111111111');
+console.log(result);
