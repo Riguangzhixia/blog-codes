@@ -79,4 +79,6 @@ Virtual DOM、Diff算法、JSX、props、state、数据不可变性、class、ex
 	* 大括号里js表达式结合JSX实现，三元表达式
     * &&与运算表达式
     * 根据条件判断修改render返回值，render返回null即不渲染  
-* 
+* 高阶组件：高级函数/函数式编程
+* 第三方库：refs的使用，空的<div/>，react不会更新它
+* 受控组件与非受控组件的选择
