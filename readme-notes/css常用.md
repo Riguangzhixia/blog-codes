@@ -58,3 +58,9 @@
 
 ## grid样例
 * [grid二维布局，相比bootstrap更自由不用引入和操控html，但兼容性](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
+
+## text-shadow复制文字
+```
+text-shadow: .5em 0, 1em 0, 1.5em 0;
+```
+## animation step参数逐帧动画
