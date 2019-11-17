@@ -31,6 +31,13 @@ function synctest(){
         }
     )
 }
+const func = new Promise((resolve, reject) => {
+    console.log('start');
+    resolve(Fetch('xxxxxxx'));
+}).then((result)=>{
+    console.log(`The result is ${result}`)
+});
+
 function fortest(){
     for (var index = 0; index < list.length; index++) {
         syncsquare(list[index]);
