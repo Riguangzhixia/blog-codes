@@ -99,7 +99,7 @@
 
 10. 性能瓶颈：[参考](https://juejin.im/post/5c6e064c51882562eb50fc18)
 * 减少对dom的操作，经常使用的dom变量预先使用变量存储
-* 利用事件冒泡对事件的腹肌元素进行事件委托，减少事件的绑定和遍历dom元素时重绘dom消耗的时间
+* 利用事件冒泡对事件父级元素进行事件委托，减少事件的绑定和遍历dom元素时重绘dom消耗的时间
 * parseInt并不是很好的选择，例子[性能](https://jsperf.com/coercion-vs-casting/3)
 * 拼接字符串尽量不使用+，es6可以用字符串模板
 
@@ -109,3 +109,11 @@
 ```
 
 ```
+13. 对象属性
+* Object.getOwnPropertyDescriptor(obj，prop) 返回指定对象上一个自有属性对应的属性描述
+* Object.getOwnPropertyDescriptors(obj) 
+* Object.defineProperties(obj,{属性们}) 修改指定对象上一个自有属性对应的属性描述
+* Object.create(原始对象)
+* Object.keys(所有属性，仅自身)
+* for in (所有属性，包括原型链)
+14. 监听对象或者数组得变化: [参考1](https://www.cnblogs.com/yayaxuping/p/10951738.html),[参考2](https://www.jb51.net/article/162584.htm)
