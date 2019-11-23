@@ -90,4 +90,4 @@ var deepClone = function fnDeepClone(obj){
         return result;
     }
     return obj;
-}
+};
