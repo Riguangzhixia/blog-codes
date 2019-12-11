@@ -1,3 +1,11 @@
+// 引用类型的普通类型的区别
+
+/*
+*
+* 引用类型的拷贝
+*
+* */
+
 function copy(obj) {
     var result = Array.isArray(obj) ? [] : {};
     for (var key in obj) {
@@ -15,8 +23,8 @@ var obj = {
     a:1,
     b:{name:'彭飞'},
     c:[1,2,3]
-}
-var ob2 = copy(obj)
+};
+var ob2 = copy(obj);
 
 
 function maxchildlen(s){

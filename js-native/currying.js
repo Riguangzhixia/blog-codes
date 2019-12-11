@@ -1,3 +1,25 @@
+/*
+*  函数柯里化
+*   就是可以通过传递给函数一部分参数来调用它返回的是处理剩余参数的函数
+*
+* */
+
+// 简单实现
+function add(a,b){
+    return a+b;
+}
+var currying = fn => {
+    const len = fn.length
+    return function curr (...args1) {
+        debugger
+        if (args1.length >= len) {
+            return fn(...args1)
+        }
+        return (...args2) => curr(...args1, ...args2)
+    }
+}
+currying(add)(1);
+console.log(currying(add));
 
 //面试题：命名函数表达式sum(100,200)(300)();得到600a
 function factorial (n) {

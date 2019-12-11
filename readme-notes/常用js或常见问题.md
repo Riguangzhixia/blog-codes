@@ -117,3 +117,6 @@
 * Object.keys(所有属性，仅自身)
 * for in (所有属性，包括原型链)
 14. 监听对象或者数组得变化: [参考1](https://www.cnblogs.com/yayaxuping/p/10951738.html),[参考2](https://www.jb51.net/article/162584.htm)
+15. JS基本类型的临时包装和基本类型的方法继承
+16. History.replaceState()干掉带token得链接
+17. 闭包中this的指向： 指向window/null
