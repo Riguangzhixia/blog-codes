@@ -94,7 +94,10 @@
     //['w','d','n','m','d']
     ```
 9. Set和Map结构
-* Set的结构：键集合
+* Set的结构：键集合，不重复
+    + WeakSet: 因为不算引用考垃圾回收的不确定性所以 WeakSet 不可遍历。（WeakSet 的一个用处，是储存 DOM 节点）
+       1. 成员只能是对象
+       2. WeakSet 中的对象都是弱引用，即垃圾回收机制不考虑 WeakSet 对该对象的引用
 * Map结构：键值对集合，比对象更自由
 
 10. 性能瓶颈：[参考](https://juejin.im/post/5c6e064c51882562eb50fc18)
@@ -120,3 +123,8 @@
 15. JS基本类型的临时包装和基本类型的方法继承
 16. History.replaceState()干掉带token得链接
 17. 闭包中this的指向： 指向window/null
+18. 多维数组的toString方法
+    ```
+    [1,[2,[3,4,[4]]]].toString()
+    //结果是"1,2,3,4"
+    ```

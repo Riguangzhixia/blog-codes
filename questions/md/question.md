@@ -51,6 +51,3 @@
     ```
 + ie9不支持console.log()而且**会阻塞js得执行**，需要打开控制台才能继续运行
 + jquery中的fadeOut和带动画得hide(100)时选择性得隐藏掉显示的元素，不显示得dom不会去操作
-
-
-[工作内容](https://webxsj.worktile.com/report/weekly/my/5de3e6f39e9b4a1607ba4440/create?from=submit)
