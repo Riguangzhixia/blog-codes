@@ -1,4 +1,6 @@
-// 访问对象属性的方法
+/* *
+*  1. 访问对象属性的方法
+* */
 
 var obj1 = {a:1,b:2};
 let test = Object.create(obj1);
@@ -14,4 +16,12 @@ console.log(Object.getOwnPropertySymbols(test)); //包含对象自身的所有Sy
 console.log(Object.keys(obj1)); //不含
 console.log(Object.getOwnPropertyNames(obj1)); //不含Symbol属性
 console.log(Object.getOwnPropertySymbols(obj1)); //包含对象自身的所有Symbol属性
-// Reflect内置对象，提供拦截JavaScript惭怍的方法
+
+/* *
+*  2. 拦截JavaScript惭怍的方法  reflect,Proxy,getter/setter
+* */
+
+//2.1 Proxy 新的proxy对象会对target进行“浅拷贝”,即proxy、target两个对象会相互影响。
+//2.2 Reflect
+//2.3 get/set方法
+
