@@ -52,9 +52,23 @@
 * transition
 * animation
 * willchange
+* animation step参数逐帧动画
 
 ## chrome字体限制
 * font-size<12 chrome都当12px处理并显示，所以调试移动端时会有溢出问题
 
 ## grid样例
 * [grid二维布局，相比bootstrap更自由不用引入和操控html，但兼容性](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
+
+## text-shadow复制文字
+```
+text-shadow: .5em 0, 1em 0, 1.5em 0;
+```
+## 层叠上下文概念
+## 重绘和回流，性能优化
+    - transform和position的区别
+## BFC的具体定义和清除BFC问题的方法
+    - 定义：
+    - 方法：
+## fixed和transfrom
+* fixed是相对于 viewport 定位，但是也有特殊情况: 当元素祖先的 transform 属性非 none 时，容器由视口改为该祖先 
