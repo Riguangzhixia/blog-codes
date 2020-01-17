@@ -86,3 +86,5 @@ text-shadow: .5em 0, 1em 0, 1.5em 0;
 ## fixed和transfrom
 
 * fixed是相对于 viewport 定位，但是也有特殊情况: 当元素祖先的 transform 属性非 none 时，容器由视口改为该祖先
+
+## css动画延迟设置为负表示提前执行了多少秒
