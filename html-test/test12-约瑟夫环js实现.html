@@ -28,7 +28,7 @@
     <div></div>
 </body>
 <script>
-    function countOff(N, M) {
+    function countOff (N, M) {
         if (N < 1 || M < 1) {
             return;
         }
@@ -37,8 +37,9 @@
         let index = 0;
         var result = [];
         while (source.length) {
-            result.unshift(source.splice(index, 1));
+
             index = (index + M - 1) % source.length;
+            result.unshift(source.splice(index, 1));
         }
         console.log(result);
         return result;
