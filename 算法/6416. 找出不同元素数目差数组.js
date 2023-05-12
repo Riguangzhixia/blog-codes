@@ -23,5 +23,4 @@ var distinctDifferenceArray = function(nums) {
     return ans;
 };
 console.log(distinctDifferenceArray([3,2,3,4,2]));
-
 ``
