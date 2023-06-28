@@ -1,6 +1,8 @@
 # 📚 练习代码仓
 ***
 学习时编写的一些测试代码
+
+后续不再更新，代码测试或者特性的展示放在 https://codesandbox.io/u/riguangzhixia 上
 1. JS [知识学习博客](https://github.com/pengfei-cn/blogs)中的一些实践代码
 2. 算法 算法练习代码
 
